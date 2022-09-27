@@ -16,8 +16,8 @@ const Programs = () => {
       {/* mapping data */}
 
       <div className="program-categories">
-        {programsData.map((program)=>(
-          <div className="category">
+        {programsData.map((program,i)=>(
+          <div className="category" key={i}>
             {program.image}
             <span> {program.heading}</span>
               <span>{program.details}</span>
